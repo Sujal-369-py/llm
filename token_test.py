@@ -43,7 +43,7 @@ def main():
     chunks = data.split("\n\n")
     doc_emb = model.encode(chunks)
 
-    query = "what is search for spritulity?"
+    query = "what is spritulity?"
     q_emb = model.encode(query)
 
     scores = vector_search(q_emb, doc_emb)
